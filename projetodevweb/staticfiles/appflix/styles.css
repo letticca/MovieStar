@@ -1,0 +1,109 @@
+.stars input {
+    display: none;
+}
+
+.stars label {
+    float: right;
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.stars input:checked ~ label {
+    color: #ffc700;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #ffc700;
+}
+
+
+body {
+    background-color: #ffe6f0; /* Cor de fundo rosa claro */
+    background-image: url("{% static 'appflix/images/iron-grip.png' %}");
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Centralizar a mensagem de boas-vindas */
+h1, h2 {
+    font-weight: 600;
+    color: #e91e63; /* Rosa escuro */
+    margin-bottom: 20px;
+}
+
+/* Estilização do botão de logout */
+.logout-button {
+    position: absolute;
+    top: 50px; /* Movido um pouco para baixo */
+    right: 20px;
+}
+
+.logout-btn {
+    background-color: transparent;
+    color: #e91e63; /* Rosa escuro */
+    border-radius: 0; /* Botão quadrado */
+    border: 2px solid #e91e63; /* Borda rosa escuro */
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #e91e63;
+    color: #fff;
+}
+
+/* Estilização do botão de busca */
+.search-input {
+    max-width: 400px;
+    border-radius: 0; /* Bordas quadradas */
+    border: 2px solid #e91e63; /* Borda rosa escuro */
+    padding: 10px;
+}
+
+.btn-search {
+    background-color: transparent;
+    color: #e91e63;
+    border: 2px solid #e91e63;
+    padding: 10px 20px;
+    border-radius: 0; /* Botão quadrado */
+    transition: all 0.3s ease;
+}
+
+.btn-search:hover {
+    background-color: #e91e63;
+    color: white;
+}
+
+/* Estilização dos cartões de filme */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.text-muted {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #e91e63; /* Rosa escuro */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c2185b; /* Rosa mais escuro */
+}

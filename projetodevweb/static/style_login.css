@@ -1,0 +1,54 @@
+p {
+    color: #B83C18;
+}
+
+h2 {
+    font-weight: 600;
+    color: var(--dominant-color, #333);
+    margin-bottom: 20px;
+}
+
+a {
+    color: #B83C18;
+}
+
+a:hover {
+    color: #c2185b;
+}
+
+
+.background-container_login {
+    background-image: url("/static/appflix/images/wallpaper_login.jpg") !important;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-container {
+    background-color: rgba(240, 240, 240, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 350px; 
+    width: 100%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+
+.btn-primary_login{
+    background-color: #B83C18 !important;
+    border: none;
+    transition: background-color 0.3s ease;
+    color: #ffff;
+}
+
+.btn-primary_login:hover {
+    background-color: #c2185b;
+    
+}
+

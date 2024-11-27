@@ -1,0 +1,94 @@
+/* style_minhas_reviews.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Cor de fundo clara */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #343a40; /* Cinza escuro */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Botão de voltar à página inicial */
+.text-center a.btn-primary {
+    background-color: #3e70a5; /* Azul padrão */
+    color: #fff; /* Texto branco */
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.text-center a.btn-primary:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    color: #fff; /* Texto permanece branco */
+}
+
+/* Estilo dos cartões */
+.card {
+    background-color: #ffffff; /* Branco */
+    border: 1px solid #dee2e6; /* Borda cinza clara */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de flutuar */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+.card-title {
+    color: #343a40; /* Cinza escuro */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #6c757d; /* Cinza médio */
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Espaçamento e layout */
+.container {
+    padding: 20px;
+}
+
+.row {
+    margin: 0 -15px; /* Ajuste para espaçamento das colunas */
+}
+
+.col-md-6 {
+    padding: 15px;
+}
+
+/* Mensagem de reviews vazias */
+.text-center p {
+    font-size: 1.2rem;
+    color: #6c757d; /* Cinza médio */
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
